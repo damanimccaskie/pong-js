@@ -1,5 +1,6 @@
 const canvas = document.querySelector('#canvas');
 const context = canvas.getContext('2d');
+const resetBtn = document.querySelector('.reset');
 
 canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
@@ -140,6 +141,10 @@ function updateScore(){
         player1Score += 1;
     }
 }
+
+resetBtn.addEventListener("click", () => {
+    location.reload();
+});
 
 function render() {
     context.clearRect(0, 0, canvas.width, canvas.height);

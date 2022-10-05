@@ -11,10 +11,41 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.heading{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+}
+
+.reset{
+    background-color: #f44336;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 14px 40px;
+}
+
+.reset:hover{
+    background-color: white;
+    font-size: 20px;
+}
+
+.credit{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 120px;
 }
 
 #canvas{
     width: 600px;
     height: 500px;
     background-color: white;
+    border: 4px solid #f44336;
 }
